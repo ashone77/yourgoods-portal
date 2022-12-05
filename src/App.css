@@ -1,38 +1,200 @@
-.App {
+*{
+  margin: 0;
+  font-weight: 800;
+  color:#3C3C3C;
+  font-family: 'Roboto', sans-serif;
+}
+#link{
+  text-decoration: none;
+  color: #3C3C3C;  
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Container{
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  text-align: center;
+  transition: all 500ms ease;
+  background-color: #3C3C3C;
+  background-image: url('./images/background.png');
+}
+.test-form-container{
+  width:40%;
+  height: 70%;
+  display: flex;
+  background-color: #D5D5D5;
+  background-image: url('./images/background.png');
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  background-blend-mode:darken ;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 300px;
+  min-height: 400px;
+}
+.Auth-form-container{
+  width:40%;
+  height: 70%;
+  display: flex;
+  background-color: #D5D5D5;
+  background-image: url('./images/background.png');
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  background-blend-mode:darken ;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 300px;
+  min-height: 400px;
+}
+#adminEmail, #adminPassword,#agentEmail, #agentPassword{
+  width:90%;
+  height: 50px;
+  min-width: 35%;
+  margin-left: 10%;
+  background-color: #3C3C3C;
+  color: #D5D5D5;
+  background-image: url('./images/background.png');
+}
+
+#adminEmail::placeholder, #adminPassword::placeholder,#agentEmail::placeholder, #agentPassword::placeholder{
+  color: #D5D5D5;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#email,#name,#password,#dob,#duration{
+  width:60%;
+  margin:auto;
+  background-color: #3C3C3C;
+  color: #D5D5D5;
+  min-width: 35%;
+  background-image: url('./images/background.png');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#btn-test{
+  background-color: #3C3C3C;
+  color: #D5D5D5;
+  border-color: #3C3C3C;
+  margin-top: 4%;
+}
+#checkbox-label{
+  margin: 3%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.navbar{
+  background-image: url('./images/background.png');
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  background-blend-mode:darken ;
+}
+#navlink{
+  color: #3c3c3c;
+  font-size: large;
+}
+#navtitle{
+  font-size: 30px;
+  color: #3C3C3C;
+}
+#btn{
+  background-color: #3C3C3C;
+  color: #D5D5D5;
+  border-color: #3C3C3C;
+}
+.Auth-form-title{
+  font-weight: 900;
+  font-size: 50px;
+  padding-bottom: 20%;
+}
+.test-container{
+
+  width:40%;
+  height: 50%;
+  background-color: #D5D5D5;
+  background-image: url('./images/background.png');
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  background-blend-mode:darken ;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 400px;
+}
+.form-title{
+  font-size:40px ;
+}
+.testlink-container{
+  background-color: #e7dfdf;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+  color: #D5D5D5;
+  width:25%;
+  padding: 3%;
+  height:20%;
+  margin: auto;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+#testlink{
+  font-size: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.text-center{
+  font-size: small;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.red-text{
+  font-family: fantasy;
+  color: wheat
+}
+
+.white-text{
+  font-family: cursive;
+  color: wheat;
+
+}
+
+.owner-container{
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  text-align: center;
+  transition: all 500ms ease;
+  background-color:rgb(167, 80, 18)
 }
